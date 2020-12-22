@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>DOM manipulation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var str1=document.getElementById("text1").value;
+            var str2=document.getElementById("text2").value;
+           
+            var x="smaran";
+            var y="password";
+            if(str1==x && str2==y)
+            {
+                alert("Welcome to your account Mr: "+str1);
+            }
+            else
+            {
+                alert("Invalid User:" );  
+            }
+          
+        }
+        
+        </script>
+
+    </head>
+    <body>
+        <input id="text1" placeholder="User Name">
+        <br><br>
+        <input type="password" id="text2" placeholder="Password">
+        <br><br>
+        <button onclick="fn1()" id="btn1">Click Me</button>
+    </body> 
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <Title>RadioButton</Title>
+        <script type="text/javascript">
+        {
+            function fn1()
+            {
+                var rd1=document.getElementById("rd1");
+                var rd2=document.getElementById("rd2");
+                if(rd1.checked==true)
+                     alert("The selected channel is: "+rd1.value);
+                else if(rd2.checked==true)
+                     alert("The selected channel is: "+rd2.value);
+                else 
+                     alert("N channel selected")
+            }
+        }
+        </script>
+
+    </head>
+    <body> 
+        <input id="rd1" type="radio" name="grp1" value="Smaran Maharjan">Smaran Maharjan</input><br>
+        <input id="rd2" type="radio" name="grp1" value="Shyam Bakhrel">Shyam bakhrel</input> <br>
+        <button onclick="fn1()" id="btn1" >Click Me</button>   <br>
+       
+    </body>
+</html>

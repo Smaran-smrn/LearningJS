@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Select Button</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+            var select1=document.getElementById("selectbox1");
+            alert(select1.options[select1.selectedIndex].value);
+        }
+        function fn2()
+        {
+            var select2=document.getElementById("selectbox2");
+            alert(select2.options[select2.selectedIndex].value);
+        }
+        
+        </script>
+    </head>
+    <body>
+        <select id="selectbox1">
+            <option value="Smaran Maharjan">Smaran Maharjan</option>
+            <option value="Shyam Bakhrel">Shyam Bakhrel</option>
+            <option value="Manish Bhandari">Manish Bhandari</option>
+        </select>
+        <button onclick="fn1()">Click Me</button><br>
+        <select id="selectbox2">
+            <option value="Samsung">Samsung</option>
+            <option value="Nokia">Nokia</option>
+            <option value="MI">MI</option>
+            <option value="Appo">Appo</option>
+        </select>
+        <button onclick="fn2()">Click Me</button>
+    </body>
+
+</html>
